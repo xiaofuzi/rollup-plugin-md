@@ -3,20 +3,12 @@ import { createFilter, makeLegalIdentifier } from 'rollup-pluginutils';
 
 const ext = /\.md$/;
 
-marked.setOptions({
-  renderer: new marked.Renderer(),
-  gfm: true,
-  tables: true,
-  breaks: false,
-  pedantic: false,
-  sanitize: true,
-  smartLists: true,
-  smartypants: false
-});
 
 export default function md ( options = {} ) {
-    const filter = createFilter( options.include, options.exclude );
-
+    const filter = createFilter( options.include || [ '**/*.md'], options.exclude );
+    if(options.marked){
+      marked.setOptions(options.marked)
+    }
     return {
         name: 'md',
 
@@ -25,10 +17,8 @@ export default function md ( options = {} ) {
             if ( !filter( id ) ) return null;
 
             const data = marked( md );
-            let code = `var data = \`${data}\`;\n`;
-            code = code + `export default data;`
             return {
-                code: code,
+                code: `export default ${JSON.stringify(data.toString())};`,
                 map: { mappings: '' }
             };
         }

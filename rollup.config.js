@@ -5,9 +5,6 @@ var external = Object.keys( pkg.dependencies );
 
 export default {
     entry: 'src/index.js',
-    //format: 'umd',
-    //moduleName: 'rollup-plugin-md',
-    //dest: 'dist/build.js',
     plugins: [ buble({ sourceMap: true }) ],
     targets: [
         {

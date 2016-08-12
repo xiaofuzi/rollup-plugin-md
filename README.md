@@ -18,7 +18,11 @@ import md from 'rollup-plugin-md';
 rollup({
     entry: 'main.js',
     plugins: [
-        md()
+        md({
+            marked: {
+                //marked options
+            }
+        })
     ]
 });
 ```
