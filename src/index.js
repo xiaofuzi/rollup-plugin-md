@@ -1,5 +1,5 @@
 import marked from 'marked';
-import { createFilter, makeLegalIdentifier } from 'rollup-pluginutils';
+import { createFilter } from 'rollup-pluginutils';
 
 const ext = /\.md$/;
 
