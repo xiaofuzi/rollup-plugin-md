@@ -21,13 +21,13 @@
   "dependencies": {
     "marked": "^1.2.7",
     "rollup": "^2.35.1",
-    "rollup-pluginutils": "^1.5.1"
+    "rollup-pluginutils": "^2.8.2"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^11.0.1",
-    "assert": "^1.4.1",
+    "assert": "^2.0.0",
     "eslint": "^7.16.0",
     "mocha": "^8.2.1",
-    "source-map-support": "^0.4.2"
+    "source-map-support": "^0.5.19"
   }
 }
