@@ -25,7 +25,6 @@ describe( 'rollup-plugin-md', function () {
 					tables: true,
 					breaks: false,
 					pedantic: false,
-					sanitize: true,
 					smartLists: true,
 					smartypants: false
 				}
