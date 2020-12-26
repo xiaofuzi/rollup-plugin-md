@@ -1,7 +1,7 @@
 var assert = require( 'assert' );
 var rollup = require( 'rollup' );
 var md = require( '../dist/rollup-plugin-md.js' );
-var npm = require( 'rollup-plugin-node-resolve' );
+var npm = require( '@rollup/plugin-node-resolve' );
 
 require( 'source-map-support' ).install();
 
@@ -18,7 +18,7 @@ function executeBundle ( bundle ) {
 describe( 'rollup-plugin-md', function () {
     it( 'converts md', function () {
         return rollup.rollup({
-            entry: 'samples/main.js',
+            input: 'samples/main.js',
             plugins: [ md({
                 marked: {
                       gfm: true,
