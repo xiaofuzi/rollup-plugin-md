@@ -4,18 +4,20 @@ var pkg = require('./package.json')
 var external = Object.keys( pkg.dependencies );
 
 export default {
-    entry: 'src/index.js',
+    input: 'src/index.js',
     plugins: [ buble({ sourceMap: true }) ],
-    targets: [
+    output: [
         {
             format: 'cjs',
-            dest: pkg['main']
+            file: pkg['main'],
+            sourcemap: true,
+            exports: 'auto'
         },
         {
             format: 'es',
-            dest: pkg['jsnext:main']
+            file: pkg['jsnext:main'],
+            sourcemap: true
         }
     ],
-    external: external,
-    sourceMap: true
+    external: external
 };
