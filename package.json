@@ -2,8 +2,10 @@
   "name": "@cutting/rollup-plugin-md",
   "version": "0.1.0",
   "description": "a rollup plugin for markdown files",
-  "main": "dist/rollup-plugin-md.js",
-  "module": "dist/rollup-plugin-md.mjs",
+  "main": "dist/index.js",
+  "module": "dist/rollup-plugin-md.esm.js",
+  "browser": "dist/rollup-plugin-md.esm.js",
+  "type": "module",
   "scripts": {
     "test": "NODE_ENV=test cutting test",
     "build": "NODE_ENV=production cutting rollup",
@@ -23,12 +25,11 @@
     "@rollup/pluginutils": "^4.1.0"
   },
   "devDependencies": {
-    "@cutting/devtools": "^4.1.3",
-    "@cutting/eslint-config": "^4.1.1",
+    "@cutting/devtools": "^4.2.0",
+    "@cutting/eslint-config": "^4.2.0",
     "@types/marked": "^1.2.1",
     "assert": "^2.0.0",
     "eslint": "^7.16.0",
-    "mocha": "^8.2.1",
     "source-map-support": "^0.5.19"
   }
 }

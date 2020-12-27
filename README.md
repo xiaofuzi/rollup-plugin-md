@@ -1,7 +1,11 @@
 ## Install
 
 ```node
-npm install rollup-plugin-md --save
+# npm
+npm install @cutting/rollup-plugin-md --save
+
+# yarn
+yarn add @cutting/rollup-plugin-md -D
 ```
 
 ## usage
@@ -13,16 +17,16 @@ console.log( `Template for render: ${md}` );
 
 ```js
 import { rollup } from 'rollup';
-import md from 'rollup-plugin-md';
+import { md } from '@cutting/rollup-plugin-md';
 
 rollup({
-    entry: 'main.js',
-    plugins: [
-        md({
-            marked: {
-                //marked options
-            }
-        })
-    ]
+  entry: 'main.js',
+  plugins: [
+    md({
+      marked: {
+        //marked options
+      }
+    })
+  ]
 });
 ```
