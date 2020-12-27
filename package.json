@@ -1,11 +1,12 @@
 {
   "name": "@cutting/rollup-plugin-md",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "a rollup plugin for markdown files",
   "main": "dist/index.js",
   "module": "dist/rollup-plugin-md.esm.js",
   "browser": "dist/rollup-plugin-md.esm.js",
   "type": "module",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "NODE_ENV=test cutting test",
     "build": "NODE_ENV=production cutting rollup",

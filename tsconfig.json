@@ -2,8 +2,7 @@
   "extends": "@cutting/devtools/typescript/tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": "./src",
-    "suppressImplicitAnyIndexErrors": true
+    "rootDir": "./src"
   },
   "include": [
     "src/**/*.ts"

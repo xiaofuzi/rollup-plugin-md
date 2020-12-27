@@ -1,6 +1,12 @@
+# @cutting/rollup-plugin-md
+
+markdown plugin for [rollup](https://github.com/rollup/rollup) using [marked](https://www.npmjs.com/package/marked).
+
+Forked from [rollup-plugin-md](https://github.com/xiaofuzi/rollup-plugin-md).
+
 ## Install
 
-```node
+```bash
 # npm
 npm install @cutting/rollup-plugin-md --save
 
