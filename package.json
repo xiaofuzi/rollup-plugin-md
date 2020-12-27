@@ -1,13 +1,12 @@
 {
-  "name": "rollup-plugin-md",
+  "name": "@cutting/rollup-plugin-md",
   "version": "0.1.0",
   "description": "a rollup plugin for markdown files",
   "main": "dist/rollup-plugin-md.js",
   "module": "dist/rollup-plugin-md.mjs",
   "scripts": {
-    "test": "mocha --require buble/register test/*.js",
-    "pretest": "npm run build",
-    "build": "rollup -c",
+    "test": "NODE_ENV=test cutting test",
+    "build": "NODE_ENV=production cutting rollup",
     "prebuild": "rm -rf dist/*"
   },
   "keywords": [
@@ -21,11 +20,12 @@
   "dependencies": {
     "marked": "^1.2.7",
     "rollup": "^2.35.1",
-    "rollup-plugin-buble": "^0.19.8",
-    "rollup-pluginutils": "^2.8.2",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "@rollup/pluginutils": "^4.1.0"
   },
   "devDependencies": {
+    "@cutting/devtools": "^4.1.3",
+    "@cutting/eslint-config": "^4.1.1",
+    "@types/marked": "^1.2.1",
     "assert": "^2.0.0",
     "eslint": "^7.16.0",
     "mocha": "^8.2.1",
