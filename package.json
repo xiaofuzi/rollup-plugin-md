@@ -1,24 +1,28 @@
 {
   "name": "@cutting/rollup-plugin-md",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "description": "a rollup plugin for markdown files",
   "main": "dist/index.js",
   "module": "dist/rollup-plugin-md.esm.js",
   "browser": "dist/rollup-plugin-md.esm.js",
-  "type": "module",
-  "types": "dist/index.d.ts",
+  "types": "dist/md.d.ts",
   "scripts": {
     "test": "NODE_ENV=test cutting test",
+    "test:ci": "CI=true NODE_ENV=test cutting test",
     "build": "NODE_ENV=production cutting rollup",
-    "prebuild": "rm -rf dist/*"
+    "prebuild": "rm -rf dist/*",
+    "prepublish": "yarn build"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "rollup",
     "plugin",
     "md",
     "markdown"
   ],
-  "author": "yangxiaofu",
+  "author": "Paul Cowan <paul.cowan@cutting.scot>",
   "license": "ISC",
   "dependencies": {
     "marked": "^1.2.7",

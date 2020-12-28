@@ -932,10 +932,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@cutting/devtools@^4.1.5":
-  version "4.1.5"
-  resolved "https://registry.npmjs.org/@cutting/devtools/-/devtools-4.1.5.tgz#9f8a36cdb62d0b5d1afbeab6146154a17fea9434"
-  integrity sha512-MdWZOdZst1mcmcPmWQESENkia/qqKQg5Mu9GVKOiVEnMZHxm9sQUsLzgscBvMrtZJHBi8TemqKqNBD7T907tnQ==
+"@cutting/devtools@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/@cutting/devtools/-/devtools-4.2.0.tgz#cf4d17d3fa8ea17645c8530051b041a6d859712f"
+  integrity sha512-Nb47kMtaivNn33SjvR0ZWpi4VhWo0gsixQae+ZdPcK/pwu7DiejK4b4giRdleUNSsFh+W5TTwQOsX9EEMs0Pgg==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -1032,12 +1032,12 @@
     whatwg-fetch "^3.5.0"
     write-file-webpack-plugin "^4.5.1"
 
-"@cutting/eslint-config@^4.1.4":
-  version "4.1.4"
-  resolved "https://registry.npmjs.org/@cutting/eslint-config/-/eslint-config-4.1.4.tgz#46c70576b9bcfe5ab7ba02d2543e15ef5e2a3515"
-  integrity sha512-ufXfJSPiu7/iTGTPgZ05PcBHfYr6uUpWkyu+ZxSsQqinIo/q5U4ZbGH54kzklKgRMG7dRhgbSCqBoohFndWIyA==
+"@cutting/eslint-config@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/@cutting/eslint-config/-/eslint-config-4.2.0.tgz#96e4fcb61bbd22e664b7cd7934335e47a7884b02"
+  integrity sha512-DOOhV005NFf7Hu27toFxCtb5Tl2qgM0VTRMBqut4IDhcqDxDvnsejOS0vlu5ZecMtlaeJtxotgzZAVIaih3Bqg==
   dependencies:
-    "@cutting/useful-types" "4.1.4"
+    "@cutting/useful-types" "4.2.0"
     "@types/webpack-env" "^1.16.0"
     "@typescript-eslint/eslint-plugin" "^4.10.0"
     "@typescript-eslint/parser" "^4.10.0"
@@ -1052,19 +1052,19 @@
     eslint-plugin-react-hooks "^4.2.0"
     prettier "2.2.1"
 
-"@cutting/useful-types@4.1.4":
-  version "4.1.4"
-  resolved "https://registry.npmjs.org/@cutting/useful-types/-/useful-types-4.1.4.tgz#d808276b930c9128f6becb3c89487aabcc4185e8"
-  integrity sha512-FPGvkzrNqgQ32x3MAs9/OhlbaR4nE6iJXjNZ1XOJPKL28+wE86mKjcXRr87djhueYQ3O0+AsLDHp+1Ite2hPmw==
+"@cutting/useful-types@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/@cutting/useful-types/-/useful-types-4.2.0.tgz#3d28374cbf7ab68cb5ac550a4cf197c16bc6ab12"
+  integrity sha512-7BJZeGdLqHJKZVsaCMoBpISog2PdEahBcOFZgwAUGFYRD32uYlP8UrtyVdAYOPA3GnN7HSP5aXCvktg6a0seRQ==
   dependencies:
-    "@cutting/util" "4.1.4"
+    "@cutting/util" "4.2.0"
 
-"@cutting/util@4.1.4":
-  version "4.1.4"
-  resolved "https://registry.npmjs.org/@cutting/util/-/util-4.1.4.tgz#fb4f4ba64fb247dc96aa77c2287944d1cb78535b"
-  integrity sha512-hGHO8PmcrfhPmGj4/A1wSz5zMbHXy+cd90s36kRgUsTnDDbF0AotWh03WZJrazPzFpZvz1jjXKpAom/rCClFDQ==
+"@cutting/util@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/@cutting/util/-/util-4.2.0.tgz#a1bd52dbfe797e06c3cc0c50f258d76e1b45467e"
+  integrity sha512-gHXFhA50Zz2F7cFxKDgFfgUhJW9PahrSqNDE/C5OdYk1w/CYjscNrEj07jp/gDPfcGhMb25938jSnF9VkehAeQ==
   dependencies:
-    "@cutting/util" "4.1.4"
+    "@cutting/util" "4.2.0"
     react "^17.0.1"
 
 "@eslint/eslintrc@^0.2.2":
