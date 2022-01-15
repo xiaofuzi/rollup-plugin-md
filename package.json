@@ -19,7 +19,7 @@
   "author": "yangxiaofu",
   "license": "ISC",
   "dependencies": {
-    "marked": "^1.2.7",
+    "marked": "^4.0.10",
     "rollup": "^2.35.1",
     "rollup-pluginutils": "^2.8.2"
   },
